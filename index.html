@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>刘涛的Blog | 游戏 & VR开发</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{color:#222;background:#f7f8fa;line-height:1.7}
+a{color:#2563eb;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid #e5e7eb;padding:18px 0}
+.header-wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:22px;font-weight:bold}
+.nav a{margin-left:18px}
+.hero{padding:60px 0;background:#fff}
+.hero h1{font-size:34px;margin-bottom:14px}
+.hero p{color:#555;font-size:17px;margin-bottom:24px}
+.btn{display:inline-block;background:#2563eb;color:#fff;padding:10px 20px;border-radius:6px;margin-right:10px;margin-bottom:10px}
+.btn.secondary{background:#fff;color:#2563eb;border:1px solid #2563eb}
+.stats{display:grid;grid-template-columns:repeat(auto-fit, minmax(140px,1fr));gap:16px;margin:30px 0}
+.stat-card{background:#f3f4f6;padding:20px;border-radius:8px;text-align:center}
+.stat-card strong{display:block;font-size:26px}
+section{padding:50px 0}
+section h2{font-size:26px;margin-bottom:24px}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(260px,1fr));gap:22px}
+.service-card{background:#fff;padding:24px;border-radius:10px;box-shadow:0 2px 8px #00000008}
+.service-card h3{margin-bottom:10px}
+.service-card ul{list-style:none;margin:12px 0 18px}
+.service-card li{color:#555;margin:6px 0}
+.testimonial{background:#fff;padding:24px;border-radius:10px;margin-bottom:16px}
+.testimonial p{color:#444}
+.testimonial .author{margin-top:10px;color:#666;font-size:14px}
+.about{background:#fff;padding:30px;border-radius:10px}
+footer{padding:30px 0;text-align:center;color:#666;font-size:14px;border-top:1px solid #e5e7eb;margin-top:40px}
+.work-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px,1fr));gap:24px}
+.work-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px #00000008;cursor:pointer}
+.work-card img{width:100%;height:200px;object-fit:cover;display:block}
+.work-card .info{padding:16px}
+.work-card h3{margin-bottom:6px}
+.work-card p{color:#666;font-size:14px}
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:999}
+.modal img{max-width:90%;max-height:90%}
+.modal.active{display:flex}
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-wrap">
+    <div class="logo">刘涛的Blog</div>
+    <div class="nav">
+      <a href="index.html">首页</a>
+      <a href="#services">服务</a>
+      <a href="#works">作品</a>
+      <a href="#testi">评价</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <h1>游戏与VR开发，打造沉浸式交互体验</h1>
+    <p>独立游戏、VR/AR交互、Unity/UE5项目开发、小游戏制作、美术资源与动画序列、技术方案外包，面向团队、工作室、高校项目提供一站式开发支持</p>
+    <div>
+      <a href="#contact" class="btn">咨询项目</a>
+      <a href="#works" class="btn secondary">查看作品</a>
+    </div>
+    <div class="stats">
+      <div class="stat-card"><strong>5+</strong>年开发经验</div>
+      <div class="stat-card"><strong>40+</strong>交付项目</div>
+      <div class="stat-card"><strong>2引擎</strong>Unity / UE5</div>
+      <div class="stat-card"><strong>96%</strong>客户好评</div>
+    </div>
+  </div>
+</div>
+
+<section class="container">
+  <h2>为什么选择我</h2>
+  <div style="display:grid;gap:18px">
+    <div class="service-card">
+      <h3>双引擎开发能力</h3>
+      <p>熟练使用Unity、UE5，擅长2D独立游戏、3D场景搭建、VR交互蓝图、输入与动作逻辑开发，熟悉微信小游戏发布流程。</p>
+    </div>
+    <div class="service-card">
+      <h3>全流程落地交付</h3>
+      <p>需求梳理、原型制作、程序逻辑、角色动画、UI交互、打包测试、上线适配，一人对接跟进，定期同步开发进度。</p>
+    </div>
+    <div class="service-card">
+      <h3>熟悉沉浸式交互</h3>
+      <p>VR手柄交互、空间UI、场景漫游、碰撞与物理交互，适配PC VR、一体机VR项目，兼顾体验流畅度与性能优化。</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="container">
+  <h2>开发服务</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>独立游戏开发</h3>
+      <p>2D/3D独立游戏，玩法原型、核心逻辑、角色控制、关卡制作。</p>
+      <ul>
+        <li>横版/像素游戏</li>
+        <li>玩法原型Demo</li>
+        <li>微信小游戏打包</li>
+      </ul>
+      <a href="service-game.html">了解更多</a>
+    </div>
+    <div class="service-card">
+      <h3>VR交互项目</h3>
+      <p>VR场景漫游、交互道具、空间UI、抓取、传送等交互功能开发。</p>
+      <ul>
+        <li>VR场景搭建</li>
+        <li>手柄交互逻辑</li>
+        <li>性能优化</li>
+      </ul>
+      <a href="service-vr.html">了解更多</a>
+    </div>
+    <div class="service-card">
+      <h3>Unity程序开发</h3>
+      <p>C#脚本、摇杆控制系统、动画状态机、粒子、存档、热更基础功能。</p>
+      <ul>
+        <li>功能脚本定制</li>
+        <li>Bug调试修复</li>
+        <li>资源整合</li>
+      </ul>
+      <a href="service-unity.html">了解更多</a>
+    </div>
+    <div class="service-card">
+      <h3>UE5蓝图开发</h3>
+      <p>蓝图交互、物理系统、Niagara特效、关卡光照、简单AI逻辑。</p>
+      <ul>
+        <li>蓝图交互制作</li>
+        <li>场景光照搭建</li>
+        <li>Demo快速验证</li>
+      </ul>
+      <a href="service-ue5.html">了解更多</a>
+    </div>
+    <div class="service-card">
+      <h3>动画与素材制作</h3>
+      <p>角色帧动画序列、待机/行走/攻击动画、像素角色、CG原画素材生成与整理。</p>
+      <ul>
+        <li>角色动画帧</li>
+        <li>像素美术资源</li>
+        <li>角色皮肤替换</li>
+      </ul>
+      <a href="service-anim.html">了解更多</a>
+    </div>
+    <div class="service-card">
+      <h3>技术咨询与教学</h3>
+      <p>引擎问题排查、代码调试、项目方案建议、入门指导。</p>
+      <ul>
+        <li>线上答疑调试</li>
+        <li>开发方案规划</li>
+        <li>学习路线建议</li>
+      </ul>
+      <a href="service-tutor.html">了解更多</a>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="container">
+  <h2>项目作品</h2>
+  <div class="work-grid">
+    <div class="work-card" onclick="openModal('images/vr1.jpg')">
+      <img src="images/vr1.jpg" alt="VR漫游项目">
+      <div class="info">
+        <h3>VR展厅漫游</h3>
+        <p>UE5制作，支持手柄抓取、传送交互，用于展馆展示</p>
+      </div>
+    </div>
+    <div class="work-card" onclick="openModal('images/game2.jpg')">
+      <img src="images/game2.jpg" alt="2D横版游戏">
+      <div class="info">
+        <h3>2D横版动作Demo</h3>
+        <p>Unity开发，角色攻击、受伤、死亡动画，类似空洞骑士手感</p>
+      </div>
+    </div>
+    <div class="work-card" onclick="openModal('images/pixel3.jpg')">
+      <img src="images/pixel3.jpg" alt="像素小游戏">
+      <div class="info">
+        <h3>像素微信小游戏</h3>
+        <p>像素风格休闲游戏，完成打包、适配微信小游戏平台</p>
+      </div>
+    </div>
+    <div class="work-card" onclick="openModal('images/vr4.jpg')">
+      <img src="images/vr4.jpg" alt="交互场景">
+      <div class="info">
+        <h3>虚拟实训场景</h3>
+        <p>VR实训交互系统，高校课程毕设项目，附带操作指引</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testi" class="container">
+  <h2>合作评价</h2>
+  <div class="testimonial">
+    <p>VR漫游项目交付稳定，交互手感打磨很到位，遇到BUG响应速度快，顺利完成我们的展示需求。</p>
+    <div class="author">某工作室项目负责人</div>
+  </div>
+  <div class="testimonial">
+    <p>2D横版游戏的角色控制、攻击死亡逻辑实现效果很好，能理解类似空洞骑士的手感需求，沟通顺畅。</p>
+  </div>
+  <div class="testimonial">
+    <p>高校VR实训项目按时交付，文档清晰，方便后续二次修改，非常适合课程展示。</p>
+    <div class="author">高校实训老师</div>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <h2>关于我</h2>
+  <div class="about">
+    <p>刘涛的博客，最初用来记录游戏开发、VR交互学习笔记、踩坑日志与Demo存档。慢慢开始承接小型外包、课程项目、独立游戏合作。</p>
+    <p style="margin-top:12px">专注Unity与UE5，偏爱沉浸式体验，注重性能、交互手感和项目可维护性。可以配合美术一起完成从原型到可运行包的完整产出。</p>
+    <ul style="margin-top:12px;padding-left:20px">
+      <li>Unity / UE5 双引擎开发</li>
+      <li>VR交互、独立小游戏、动画素材制作</li>
+      <li>擅长快速制作Demo原型、调试bug</li>
+    </ul>
+    <a href="index.html#works" class="btn secondary" style="margin-top:16px">查看更多项目日志</a>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>准备好启动你的项目了吗？</h2>
+  <p style="margin-bottom:20px">无论是VR展示项目、独立游戏Demo、功能脚本定制、课程实训项目，欢迎沟通需求，前期评估免费。</p>
+  <a href="#contact" class="btn">咨询项目</a>
+  <a href="#works" class="btn secondary">查看作品</a>
+  <p style="margin-top:20px;color:#555">一般当天回复，支持签署保密协议，可分阶段交付。</p>
+  <p style="margin-top:12px">邮箱：15528311946@qq.com<br>可承接：个人独立项目、工作室外包、高校VR/游戏毕设项目</p>
+</section>
+
+<footer>
+  <div class="container">
+    <p>刘涛的Blog © 2026 | Game & VR Dev</p>
+  </div>
+</footer>
+
+<div class="modal" id="imgModal" onclick="closeModal()">
+  <img id="modalImg" src="">
+</div>
+<script>
+function openModal(src){
+  document.getElementById('modalImg').src = src;
+  document.getElementById('imgModal').classList.add('active');
+}
+function closeModal(){
+  document.getElementById('imgModal').classList.remove('active');
+}
+</script>
+</body>
+</html>
